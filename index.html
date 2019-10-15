@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Clean-Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body> 
+
+        <div id ="main" class="card">
+            <div class = "card-content">
+        <span class ="card-title">Lägg till städuppgift</span>   
+       <form id="task-form">      
+       <input  type="text" name="task" id="task" > 
+        <label for="task">Ny städuppgift</label>
+       </div>
+       <input type="submit" value="Lägg till" class="btn">
+    </form>
+    <div class="card-action">
+      <h5 id="task-title">Städ uppgiftslista</h5> 
+      <!--<input  type="text" name="filter" id="filter" ><br> 
+      <label for="filter">Filter Task</label><br>-->    
+    </div> 
+
+   <ul class="collection">
+        
+    </ul>
+    <a href="#" class="clear-task" class= "btn1">RENSA LISTA</a>
+    <input list="days" name="Weekday" id="day">
+<datalist id="days">
+  <option value="Monday">
+  <option value="Tuesday">
+  <option value="Wensday">
+  <option value="Thursday">
+  <option value="Friday">
+</datalist>
+<input type="submit" class="btn" id='send'>
+    
+ 
+    
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="lokal.js"></script>   
+</body>
+</html>
