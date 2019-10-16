@@ -35,7 +35,7 @@ li.appendChild(document.createTextNode(taskInput.value));
 
 //lägg till input i en array
 todo.push(taskInput.value);
-console.log(todo);
+//console.log(todo);
 
 //skapa link element
 const link = document.createElement('a');
@@ -73,6 +73,6 @@ function removeTask(e) {
     }
   }
   //function för skicka lista
-  function sendList(e){
-   console.log(e.target);
+  function sendList(e){      
+   console.log(todo);
   }
